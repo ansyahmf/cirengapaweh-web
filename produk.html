@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Detail Produk - Cireng A'paweh</title>
+
+    <meta name="description" content="Pesan Cireng A'paweh favoritmu sekarang, fresh dan siap santap!" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Cireng A'paweh" />
+
+    <link rel="icon" href="assets/image/logo/logoOfficial.svg?v=1" type="image/x-icon" />
+
+    <!-- Layout & Component Styles -->
+    <link rel="stylesheet" href="assets/styles/global.css" />
+    <link rel="stylesheet" href="assets/styles/components/navbar.css" />
+    <link rel="stylesheet" href="assets/styles/components/footer.css" />
+
+    <!-- Page Specific Styles -->
+    <link rel="stylesheet" href="assets/styles/page/produk.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbarCustomCireng">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/image/logo/logoOfficial.svg" alt="Logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span>
+                    <img src="assets/icon/humbergerMenu.svg" alt="Humberger Menu">
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#hero">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#promo">Promo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#reels">Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#mitra">Kemitraan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentangKami.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cek-order.html">Cek Order</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main>
+        <main>
+            <div class="detail flexRow">
+                <div class="breakpoint animated">
+                    <a href="index.html#menu" class="btnOutline kembali" style="text-decoration: none;">Kembali</a>
+
+                    <div class="box1 flexRow">
+                        <div class="productVisual">
+                            <img id="productImg" src="assets/image/produk/Cireng Salju Kuah Keju Creamy.jpg"
+                                alt="Produk Cireng" onerror="this.src='https://placehold.co/800x800.png'">
+                        </div>
+
+                        <div class="flexCol">
+                            <div class="productTitle flexCol">
+                                <h1 class="displayH1 charcoalGrey">
+                                    Spesial Buat Kamu: <br>
+                                    <span class="primaryBrandRed" id="productName">Cireng A'paweh</span>
+                                </h1>
+                            </div>
+
+                            <div class="sellerMsg">
+                                <div class="sellerQuote flexRow">
+                                    <img src="assets/icon/kutip.svg" alt="Quote" class="charcoalGrey">
+                                    <h4 class="subH4">Deskripsi Produk</h4>
+                                </div>
+                                <span class="bodyLg descriptionText" id="productDesc"></span>
+                            </div>
+
+                            <div class="productBuy flexCol">
+                                <span class="subH4">Atur Jumlah Pembelian</span>
+
+                                <div class="flexCol">
+                                    <div class="quantityInput">
+                                        <button type="button" id="btnMinus">
+                                            <img src="assets/icon/minus.svg" alt="minus">
+                                        </button>
+                                        <input name="quantity" id="qtyInput" type="number" class="subH3 primaryBrandRed"
+                                            value="1" min="1" max="99" readonly>
+                                        <button type="button" id="btnPlus">
+                                            <img src="assets/icon/plus.svg" alt="plus">
+                                        </button>
+                                    </div>
+
+                                    <button type="button" id="btnBeliLangsung" class="btnPrimary"
+                                        style="border: none; cursor: pointer; width: 100%; margin-top: 16px;">
+                                        Pesan via WhatsApp
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> <!-- end box1 -->
+
+                </div> <!-- end breakpoint -->
+            </div> <!-- end detail -->
+        </main>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer flexCol" id="footer">
+        <div class="breakpoint cleanWhite">
+            <div class="box1 flexRow">
+                <div class="flexCol">
+                    <div class="flexRow">
+                        <img id="logo" src="assets/image/logo/logo.svg" alt="Cireng A'paweh">
+                        <div class="flexCol">
+                            <h2 class="displayH2 accentCheeseYellow">Cireng A'paweh</h2>
+                            <div class="caption">Cemilan Sunda Modern</div>
+                        </div>
+                    </div>
+                    <div class="caption">
+                        Melestarikan cita rasa autentik Sunda melalui inovasi camilan lumer yang praktis dan kekinian.
+                    </div>
+                </div>
+
+                <div id="responsiveMenu">
+                    <div class="flexCol aMenu">
+                        <h2 class="displayH2 accentCheeseYellow">Jelajahi</h2>
+                        <a class="caption" href="index.html#hero">Beranda</a>
+                        <a class="caption" href="index.html#promo">Promo</a>
+                        <a class="caption" href="index.html#menu">Menu</a>
+                        <a class="caption" href="index.html#reels">Video</a>
+                        <a class="caption" href="index.html#mitra">Kemitraan</a>
+                        <a class="caption" href="tentangKami.html">Tentang Kami</a>
+                        <a class="caption" href="cek-order.html">Cek Order</a>
+                    </div>
+
+                    <div class="flexCol aMenu">
+                        <h2 class="displayH2 accentCheeseYellow">Hubungi Kami</h2>
+                        <a class="caption" href="https://wa.me/6281944327907">
+                            <img src="assets/icon/fTelepon.svg" alt="Nomor Telp">+62 819-4432-7907
+                        </a>
+                        <a class="caption" href="mailto:cirengapaweh@gmail.com">
+                            <img src="assets/icon/fMail.svg" alt="Email">cirengapaweh@gmail.com
+                        </a>
+                        <a class="caption" href="https://maps.app.goo.gl/UrTHxx5Lu5f27SbK9" target-"_blank" rel="noopener noreferrer"
+                            rel="noopener">
+                            <img src="assets/icon/fLokasi.svg" alt="Lokasi">Ruko Gate 2 Tel-U (Pusat)
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box2 flexRow">
+                <div class="caption"><small>&copy; 2026 Cireng A'Paweh. All rights reserved</small></div>
+                <div class="medsos flexRow">
+                    <a href="https://www.instagram.com/cirengapawe/" target-"_blank" rel="noopener noreferrer" rel="noopener"><img
+                            src="assets/icon/instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.tiktok.com/@cirengaapweh" target-"_blank" rel="noopener noreferrer" rel="noopener"><img
+                            src="assets/icon/tiktok.svg" alt="TikTok"></a>
+                    <a href="https://wa.me/6281944327907" target-"_blank" rel="noopener noreferrer" rel="noopener"><img
+                            src="assets/icon/whatsApp.svg" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- VENDOR & LOGIC SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="assets/scripts/scrollreveal.js"></script>
+
+    <!-- DB -->
+    <script src="assets/scripts/database.js"></script>
+
+    <!-- CUSTOM -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 1. Ambil Parameter URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id') || "1";
+            const isPromo = urlParams.get('promo') === 'true'; // Tambahan agar tombol WA tidak error
+
+            // 2. KONEK DB
+            const product = (typeof productsDatabase !== "undefined" && productsDatabase[productId])
+                ? productsDatabase[productId]
+                : {
+                    name: "Cireng A'paweh",
+                    image: "assets/image/produk/Cireng Salju Kuah Keju Creamy.jpg",
+                    description: "Camilan khas Sunda dengan sentuhan modern."
+                };
+
+            // 3. Render Teks, Gambar, dan Title
+            const elName = document.getElementById('productName');
+            const elDesc = document.getElementById('productDesc');
+            const elImg = document.getElementById('productImg');
+
+            if (elName) elName.innerText = product.name;
+            if (elDesc) elDesc.innerText = product.description;
+            if (elImg) {
+                elImg.src = product.image;
+                elImg.alt = product.name;
+            }
+            document.title = `${product.name} - Cireng A'paweh`;
+
+            // 4. Counter Quantity
+            const qtyInput = document.getElementById('qtyInput');
+            const btnMinus = document.getElementById('btnMinus');
+            const btnPlus = document.getElementById('btnPlus');
+
+            if (btnMinus && qtyInput) {
+                btnMinus.addEventListener('click', () => {
+                    let val = parseInt(qtyInput.value) || 1;
+                    if (val > 1) qtyInput.value = val - 1;
+                });
+            }
+
+            if (btnPlus && qtyInput) {
+                btnPlus.addEventListener('click', () => {
+                    let val = parseInt(qtyInput.value) || 1;
+                    if (val < 99) qtyInput.value = val + 1;
+                });
+            }
+
+            // 5. Pesan via WhatsApp
+            const btnBeli = document.getElementById('btnBeliLangsung');
+            if (btnBeli) {
+                btnBeli.addEventListener('click', function () {
+                    const qty = qtyInput ? qtyInput.value : "1";
+
+                    const textMessage = `Halo Admin Cireng A'paweh, saya mau tanya harga dan pesan menu ini:\n\n` +
+                        `*Menu:* ${product.name}\n` +
+                        (isPromo ? `*Keterangan:* Mengambil Promo Spesial\n` : ``) +
+                        `*Jumlah:* ${qty} porsi\n\n` +
+                        `Boleh minta info harga dan ketersediaan stoknya? Terima kasih!`;
+
+                    const waUrl = `https://wa.me/6281944327907?text=${encodeURIComponent(textMessage)}`;
+
+                    window.location.href = waUrl;
+                });
+            }
+        });
+    </script>
+</body>
+</html>
