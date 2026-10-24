@@ -1,9 +1,18 @@
-        ScrollReveal().reveal('.animated', {
-            delay: 200,
-            distance: '30px',
-            duration: 800,
-            easing: 'ease-out',
-            origin: 'bottom',
-            interval: 100,
-            reset: true
+document.addEventListener("DOMContentLoaded", () => {
+    const animatedElements = document.querySelectorAll(".animated");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("revealed");
+            } else {
+                entry.target.classList.remove("revealed");
+            }
         });
+    }, {
+        threshold: 0.15,
+        rootMargin: "0px 0px -40px 0px"
+    });
+
+    animatedElements.forEach((el) => observer.observe(el));
+});
