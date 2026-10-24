@@ -3,8 +3,42 @@
 /* start: navbar global style */
 .navbar { position: fixed; width: 100%; z-index: 100; background: transparent; transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease; }
 .navbar .container-fluid { padding: 0 var(--gap-medium); max-width: 1200px; }
-.navbar-brand img { max-width: 90px; }
-.navbar-toggler { background: transparent; border: none; }
+
+/* clear default bootstrap */
+.navbarCustomCireng .navbar-toggler {
+    border: none;
+    padding: 8px;
+    background: transparent;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+/* hamburger contain */
+.hamburger-icon {
+    width: 28px;
+    height: 22px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* strip hamburger */
+.hamburger-icon .toggler-bar {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--charcoal-grey);
+    border-radius: 4px;
+    transform-origin: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* transisi bentuk */
+.navbarCustomCireng .navbar-toggler:not(.collapsed) .hamburger-icon .toggler-bar { background-color: var(--primary-brand-red); }
+.navbarCustomCireng .navbar-toggler:not(.collapsed) .hamburger-icon .toggler-bar:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+.navbarCustomCireng .navbar-toggler:not(.collapsed) .hamburger-icon .toggler-bar:nth-child(2) { opacity: 0; transform: scaleX(0);}
+.navbarCustomCireng .navbar-toggler:not(.collapsed) .hamburger-icon .toggler-bar:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
 /* end: navbar global style */
 
 /* start: typography & state */

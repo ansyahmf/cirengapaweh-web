@@ -1,6 +1,10 @@
 /* start: lokasi section wrapper */
 .lokasi { background: var(--primary-brand-red); align-items: center; }
 .lokasi .wrapBreakpoint { width: 100%; align-items: center; background: var(--clean-white); border-radius: 130em 130em 0 0 / 120% 120% 0 0; padding-inline: var(--gap-small); }
+.lCrd .bodyMain {
+    position: relative;
+    top: 1px;
+}
 /* end: lokasi section wrapper */
 
 /* start: base override global */
