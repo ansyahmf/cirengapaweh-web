@@ -132,7 +132,7 @@ Karena tidak menggunakan backend server, proyek ini tidak memerlukan PHP, Compos
 3. Pada bagian **Build and deployment**:
    * **Source:** Pilih `Deploy from a branch`.
    * **Branch:** Pilih branch `main` (atau `master`) dan path root `/ (root)`.
-4. Klik **Save**. Situs akan aktif secara publik dalam beberapa menit di URL `https://ansyahmf.github.io/cirengapaweh-web/`.
+4. Klik **Save**. Situs akan aktif secara publik dalam beberapa menit di URL `https://ansyahmf.github.io/cirengapaweh-web`.
 
 ---
 
